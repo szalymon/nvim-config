@@ -10,6 +10,9 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+keymap("n", "<leader>nh", ":nohl<CR>", opts)
+keymap("n", "x", '"_x', opts)
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -66,4 +69,21 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+
+
+
+-- nvim-tree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts )
+
+-- telescope
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts )
+keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", opts)
+keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
+keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
+
+
+
+
+
 
