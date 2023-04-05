@@ -2,8 +2,9 @@
 -- require("gruvbox").setup({})
 require("catppuccin").setup({})
 
-
-vim.cmd.colorscheme "catppuccin-latte"
+vim.o.background = 'dark'
+-- vim.cmd.colorscheme 'catppuccin-frappe'
+vim.cmd([[colorscheme catppuccin-frappe]])
 
 
 -- vim.cmd [[

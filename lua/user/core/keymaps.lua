@@ -43,7 +43,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
--- Press jk fast to exit insert mode 
+-- Press jk fast to exit insert mode
 -- keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
@@ -70,20 +70,20 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
-
-
 -- nvim-tree
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts )
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- telescope
-keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts )
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
 
-
-
-
-
-
+--- Tmux integration
+keymap("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", opts)
+keymap("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", opts)
+keymap("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", opts)
+keymap("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", opts)
+keymap("n", "<C-\\>", "<Cmd>NvimTmuxNavigateLastActive<CR>", opts)
+keymap("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNext<CR>", opts)
